@@ -1,0 +1,9 @@
+String functions
+are used to perform an operation on input string and return an output string.
+Following are the string functions defined in SQL:
+
+SELECT ascii('t');
+SELECT char_length('Hello!');
+select ENAMe ||'id is '||   EMPNO from EMP   ;
+SELECT FIND_IN_SET('b', 'a, b, c, d, e, f');
+Format("0.981", "Percent");
