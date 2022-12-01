@@ -1,0 +1,14 @@
+SELECT first_name
+FROM employees
+WHERE REGEXP_LIKE( first_name, 'l{2}', 'i' )
+ORDER BY first_name;
+
+SELECT last_name
+FROM employees
+WHERE REGEXP_LIKE( last_name, '^a', 'i' );
+
+SELECT first_name
+FROM employees
+WHERE REGEXP_LIKE( first_name, 'l{2}', 'i' )
+ORDER BY first_name;
+
