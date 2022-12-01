@@ -1,15 +1,26 @@
-SELECT ENAME, SUM(SAL) FROM  EMP 
-GROUP BY ENAME having SAL>2000;
+SQL has many built-in functions for performing calculations on data.
 
+SQL Aggregate Functions
+SQL aggregate functions return a single value, calculated from values in a column.
 
-select * from emp where rownum <=( select count (*)-13 from emp);
+Useful aggregate functions:
 
-SELECT COUNT(*) Count FROM emp;
+AVG() - Returns the average value
+COUNT() - Returns the number of rows
+FIRST() - Returns the first value
+LAST() - Returns the last value
+MAX() - Returns the largest value
+MIN() - Returns the smallest value
+SUM() - Returns the sum
+SQL Scalar functions
+SQL scalar functions return a single value, based on the input value.
 
-SELECT AVG(Salary) average_sal FROM emp;
+Useful scalar functions:
 
-SELECT SUM(Salary) total_sal FROM emp;
-
-sELECT MIN (hire_date) oldest, MAX (hire_date) latest
-FROM emp;
-
+UCASE() - Converts a field to upper case
+LCASE() - Converts a field to lower case
+MID() - Extract characters from a text field
+LEN() - Returns the length of a text field
+ROUND() - Rounds a numeric field to the number of decimals specified
+NOW() - Returns the current system date and time
+FORMAT() - Formats how a field is to be displayed
