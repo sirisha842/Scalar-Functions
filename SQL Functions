@@ -1,0 +1,15 @@
+SELECT ENAME, SUM(SAL) FROM  EMP 
+GROUP BY ENAME having SAL>2000;
+
+
+select * from emp where rownum <=( select count (*)-13 from emp);
+
+SELECT COUNT(*) Count FROM emp;
+
+SELECT AVG(Salary) average_sal FROM emp;
+
+SELECT SUM(Salary) total_sal FROM emp;
+
+sELECT MIN (hire_date) oldest, MAX (hire_date) latest
+FROM emp;
+
